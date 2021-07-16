@@ -15,8 +15,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(schema = "cabinet", name = "rendez_vous")
-public class RendezVous implements Serializable {
+@Table(name = "rendez_vous")
+public class RendezVous{
 
 	private static final long serialVersionUID = -7275578697948165342L;
 

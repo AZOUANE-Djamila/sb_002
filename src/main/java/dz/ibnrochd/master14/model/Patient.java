@@ -15,11 +15,11 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity
-@Table(schema = "cabinet", name = "patient")
-public class Patient implements Serializable {
+//@Entity
+//@Table(schema = "cabinet", name = "patient")
+public class Patient  {
 
-	private static final long serialVersionUID = -3415388341943341473L;
+	//private static final long serialVersionUID = -3415388341943341473L;
 
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
