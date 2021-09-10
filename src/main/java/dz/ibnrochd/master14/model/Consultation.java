@@ -35,7 +35,7 @@ public class Consultation {
     @Temporal(TemporalType.DATE)
     private Date date_consultation;
 	
-	 @ManyToOne()
+	 @ManyToOne(targetEntity = Patient.class)
 	    @JoinColumn(name = "id_patient", nullable = false)
 	    private Patient patient;
 	
