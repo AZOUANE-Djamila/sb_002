@@ -1,16 +1,19 @@
 package dz.ibnrochd.master14.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "traitement")
+@Table(schema = "cabinet",name = "traitement")
 public class Traitement {
 
 	//private static final long serialVersionUID = 8248365590951840055L;
@@ -18,16 +21,19 @@ public class Traitement {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private long id;
 	
 
     @Column(name = "nom", nullable = false, length = 255)
     private String nom;
 
+    @OneToMany()//mappedBy = "traitements")
+    private List<LigneConsultation> ligneConsultations = new ArrayList<>();
+    
 	public Traitement() {
 		super();
 	}
-	public Traitement(int id, String nom) {
+	public Traitement(long id, String nom) {
 		super();
 		this.id = id;
 		this.nom = nom;
@@ -35,13 +41,13 @@ public class Traitement {
 	/**
 	 * @return the id
 	 */
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	/**

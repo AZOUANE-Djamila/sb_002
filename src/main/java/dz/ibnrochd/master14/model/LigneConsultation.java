@@ -12,14 +12,16 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "ligneConsultation")
+@Table(schema = "cabinet", name = "ligneConsultation")
+
+
 public class LigneConsultation {
 
 	private static final long serialVersionUID = -1882485395538957648L;
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
 	 
 	 @ManyToOne()
@@ -38,7 +40,7 @@ public class LigneConsultation {
 	 public LigneConsultation() {
 			super();		
 		}
-	public LigneConsultation(int id, Consultation id_consultation, Traitement id_traitement, String posologie,
+	public LigneConsultation(long id, Consultation id_consultation, Traitement id_traitement, String posologie,
 			String unite_temps, String quantite) {
 		super();
 		this.id = id;
@@ -50,13 +52,13 @@ public class LigneConsultation {
 	/**
 	 * @return the id
 	 */
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	

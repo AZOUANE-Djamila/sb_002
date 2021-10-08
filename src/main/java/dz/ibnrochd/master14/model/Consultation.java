@@ -18,7 +18,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name = "consultation")
+@Table(schema = "cabinet", name = "consultation")
 public class Consultation {
 
 	private static final long serialVersionUID = -3669998604878710274L;
@@ -26,7 +26,7 @@ public class Consultation {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private long id;
     
 	@Column(name = "motif", length = 255)
     private String motif;
@@ -35,7 +35,7 @@ public class Consultation {
     @Temporal(TemporalType.DATE)
     private Date date_consultation;
 	
-	 @ManyToOne(targetEntity = Patient.class)
+	 @ManyToOne()
 	    @JoinColumn(name = "id_patient", nullable = false)
 	    private Patient patient;
 	
@@ -43,7 +43,7 @@ public class Consultation {
 		super();
 	}
 
-	public Consultation(int id, String motif, Date date_consultation, Patient patient) {
+	public Consultation(long id, String motif, Date date_consultation, Patient patient) {
 		super();
 		this.id = id;
 		this.motif = motif;
@@ -54,14 +54,14 @@ public class Consultation {
 	/**
 	 * @return the id
 	 */
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -107,9 +107,11 @@ public class Consultation {
 		this.patient = patient;
 	}
 
-	 ////////////////////////////
+	public void forEach(Object object) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
-
-
-
+	 ////////////////////////////
 }

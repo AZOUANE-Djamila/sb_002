@@ -7,7 +7,8 @@ import dz.ibnrochd.master14.model.Consultation;
 import dz.ibnrochd.master14.model.LigneConsultation;
 
 @Repository
-public interface LigneConsultationRepository extends JpaRepository<LigneConsultationRepository, Integer> {
+public interface LigneConsultationRepository extends JpaRepository<LigneConsultation, Long> 
+{
 	//LigneConsultation findById(int id);
 
 }

@@ -15,14 +15,14 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name = "rendez_vous")
+@Table(schema = "cabinet",name = "rendez_vous")
 public class RendezVous{
 
 	private static final long serialVersionUID = -7275578697948165342L;
 
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @Column(name = "date_rdv", nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
@@ -38,7 +38,7 @@ public class RendezVous{
 		
 	}
 
-	public RendezVous(int id, Date dateRdv, Patient patient) {
+	public RendezVous(long id, Date dateRdv, Patient patient) {
 		super();
 		this.id = id;
 		this.dateRdv = dateRdv;
@@ -47,11 +47,11 @@ public class RendezVous{
 
 	///////////////////////////////////////////////
 	
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

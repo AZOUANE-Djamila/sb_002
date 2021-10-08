@@ -5,7 +5,14 @@ import org.springframework.stereotype.Repository;
 
 import dz.ibnrochd.master14.model.Consultation;
 
+/*@Repository
+public interface ConsultationRepository 
+	extends JpaRepository<Consultation, Integer> 
+{
+	Consultation findById(int id);
+}*/
 @Repository
 public interface ConsultationRepository extends JpaRepository<Consultation, Integer> {
-	Consultation findById(int id);
+
+    
 }

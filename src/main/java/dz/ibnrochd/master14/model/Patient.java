@@ -15,15 +15,15 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-//@Entity
-//@Table(schema = "cabinet", name = "patient")
+@Entity
+@Table(schema = "cabinet", name = "patient")
 public class Patient  {
 
 	//private static final long serialVersionUID = -3415388341943341473L;
 
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @Column(name = "nom", nullable = false, length = 255)
     private String nom;
@@ -44,10 +44,10 @@ public class Patient  {
     @Column(name = "adresse", nullable = false, length = 255)
     private String adresse;
     
-    @OneToMany(mappedBy = "patient")
+    @OneToMany()//(mappedBy = "patients")
     private List<Consultation> consultations = new ArrayList<>();
     
-    @OneToMany(mappedBy = "patient")
+    @OneToMany()//(mappedBy = "patients")
     private List<RendezVous> rendezVous = new ArrayList<>();
     
     /////////////////////////////////////////////////////////
@@ -55,7 +55,7 @@ public class Patient  {
     public Patient() {		
 	}
 
-	public Patient(int id, String nom, String prenom, String sexe, Date dateNaissance, String numeroTelephone,
+	public Patient(long id, String nom, String prenom, String sexe, Date dateNaissance, String numeroTelephone,
 			String adresse) {
 		this.id = id;
 		this.nom = nom;
@@ -68,11 +68,11 @@ public class Patient  {
 	
 	//////////////////////////////////////////////////////
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

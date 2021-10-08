@@ -7,7 +7,8 @@ import dz.ibnrochd.master14.model.Consultation;
 import dz.ibnrochd.master14.model.RendezVous;
 
 @Repository
-public interface RendezVousRepository extends JpaRepository<RendezVous, Integer> {
+public interface RendezVousRepository extends JpaRepository<RendezVous, Integer> 
+{
 	//RendezVous findById(int id);
 
 }

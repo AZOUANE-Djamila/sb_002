@@ -7,7 +7,9 @@ import dz.ibnrochd.master14.model.Consultation;
 import dz.ibnrochd.master14.model.Traitement;
 
 @Repository
-public interface TraitementRepository extends JpaRepository<Traitement, Integer> {
+public interface TraitementRepository 
+extends JpaRepository<Traitement, Integer> 
+{
 	//Traitement findById(int id);
 
 }
