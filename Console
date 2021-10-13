@@ -7,22 +7,22 @@
  =========|_|==============|___/=/_/_/_/
 [32m :: Spring Boot :: [39m      [2m (v2.3.5.RELEASE)[0;39m
 
-[2m2021-10-13 09:17:17.407[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[           main][0;39m [36mdz.ibnrochd.master15.Sb002Application   [0;39m [2m:[0;39m Starting Sb002Application on DESKTOP-OD5BH4Q with PID 13092 (C:\Users\shiftin\Desktop\Spring boot\Activités\sb_002\target\classes started by shiftin in C:\Users\shiftin\Desktop\Spring boot\Activités\sb_002)
-[2m2021-10-13 09:17:17.410[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[           main][0;39m [36mdz.ibnrochd.master15.Sb002Application   [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
-[2m2021-10-13 09:17:18.136[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[           main][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2m2021-10-13 09:17:18.238[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[           main][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 85ms. Found 5 JPA repository interfaces.
-[2m2021-10-13 09:17:18.610[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
-[2m2021-10-13 09:17:18.720[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
-[2m2021-10-13 09:17:18.803[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.5.7.Final
-[2m2021-10-13 09:17:18.815[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[           main][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories…
-[2m2021-10-13 09:17:18.945[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[2m2021-10-13 09:17:19.058[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
-[2m2021-10-13 09:17:19.259[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
-[2m2021-10-13 09:17:19.274[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2m2021-10-13 09:17:20.420[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2m2021-10-13 09:17:20.427[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2m2021-10-13 09:17:20.701[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[           main][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
-[2m2021-10-13 09:17:20.709[0;39m [32m INFO[0;39m [35m13092[0;39m [2m---[0;39m [2m[           main][0;39m [36mdz.ibnrochd.master15.Sb002Application   [0;39m [2m:[0;39m Started Sb002Application in 3.57 seconds (JVM running for 4.284)
+[2m2021-10-13 09:20:33.550[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[           main][0;39m [36mdz.ibnrochd.master15.Sb002Application   [0;39m [2m:[0;39m Starting Sb002Application on DESKTOP-OD5BH4Q with PID 12644 (C:\Users\shiftin\Desktop\Spring boot\Activités\sb_002\target\classes started by shiftin in C:\Users\shiftin\Desktop\Spring boot\Activités\sb_002)
+[2m2021-10-13 09:20:33.553[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[           main][0;39m [36mdz.ibnrochd.master15.Sb002Application   [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2021-10-13 09:20:34.146[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[           main][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2m2021-10-13 09:20:34.234[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[           main][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 79ms. Found 5 JPA repository interfaces.
+[2m2021-10-13 09:20:34.634[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-10-13 09:20:34.678[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2m2021-10-13 09:20:34.761[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.5.7.Final
+[2m2021-10-13 09:20:34.801[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[           main][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Triggering deferred initialization of Spring Data repositories…
+[2m2021-10-13 09:20:34.921[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2m2021-10-13 09:20:35.028[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2m2021-10-13 09:20:35.224[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2m2021-10-13 09:20:35.239[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[         task-1][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2m2021-10-13 09:20:36.419[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2m2021-10-13 09:20:36.427[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[         task-1][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2021-10-13 09:20:36.687[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[           main][0;39m [36mDeferredRepositoryInitializationListener[0;39m [2m:[0;39m Spring Data repositories initialized!
+[2m2021-10-13 09:20:36.692[0;39m [32m INFO[0;39m [35m12644[0;39m [2m---[0;39m [2m[           main][0;39m [36mdz.ibnrochd.master15.Sb002Application   [0;39m [2m:[0;39m Started Sb002Application in 3.423 seconds (JVM running for 4.106)
 ______________________________________________________________________________________________
 
 Récupérer la liste de tous les patients puis afficher leurs noms
@@ -51,9 +51,11 @@ ________________________________________________________________________________
 
 Créer un nouveau patient (valeurs au choix)  PUIS enregistrer-le
 Le patient ajouté: 
-AZOUANE Djamila
+AZOUANE Yasmine
 
 AZOUANE Djamila
+
+AZOUANE Yasmine
 
 ______________________________________________________________________________________________
 
@@ -68,3 +70,4 @@ La liste des traitements préscits pour la consultation N°3 est:
 - FORLAX
 
 - PIASCLEDINE
+
