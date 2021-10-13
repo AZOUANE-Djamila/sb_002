@@ -1,4 +1,4 @@
-package dz.ibnrochd.master14.model;
+package dz.ibnrochd.master15.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ public class Consultation {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private int id;
     
 	@Column(name = "motif", length = 255)
     private String motif;
@@ -38,12 +38,15 @@ public class Consultation {
 	 @ManyToOne()
 	    @JoinColumn(name = "id_patient", nullable = false)
 	    private Patient patient;
+	 
+	 @OneToMany()
+	    private List<LigneConsultation> ligneConsultations = new ArrayList<>();
 	
 	public Consultation() {
 		super();
 	}
 
-	public Consultation(long id, String motif, Date date_consultation, Patient patient) {
+	public Consultation(int id, String motif, Date date_consultation, Patient patient) {
 		super();
 		this.id = id;
 		this.motif = motif;
@@ -54,14 +57,14 @@ public class Consultation {
 	/**
 	 * @return the id
 	 */
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -98,6 +101,14 @@ public class Consultation {
 	 */
 	public Patient getPatient() {
 		return patient;
+	}
+
+	public List<LigneConsultation> getLigneConsultations() {
+		return ligneConsultations;
+	}
+
+	public void setLigneConsultations(List<LigneConsultation> ligneConsultations) {
+		this.ligneConsultations = ligneConsultations;
 	}
 
 	/**

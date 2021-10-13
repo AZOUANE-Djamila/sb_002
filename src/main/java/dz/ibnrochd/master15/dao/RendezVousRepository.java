@@ -1,10 +1,10 @@
-package dz.ibnrochd.master14.dao;
+package dz.ibnrochd.master15.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import dz.ibnrochd.master14.model.Consultation;
-import dz.ibnrochd.master14.model.RendezVous;
+import dz.ibnrochd.master15.model.Consultation;
+import dz.ibnrochd.master15.model.RendezVous;
 
 @Repository
 public interface RendezVousRepository extends JpaRepository<RendezVous, Integer> 

@@ -1,4 +1,4 @@
-package dz.ibnrochd.master14.model;
+package dz.ibnrochd.master15.model;
 
 import java.io.Serializable;
 import java.util.Date;

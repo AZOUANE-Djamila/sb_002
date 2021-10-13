@@ -1,4 +1,4 @@
-package dz.ibnrochd.master14.model;
+package dz.ibnrochd.master15.model;
 
 import java.io.Serializable;
 
@@ -27,7 +27,11 @@ public class LigneConsultation {
 	 @ManyToOne()
 	    @JoinColumn(name = "id_traitement", nullable = false)
 	    private Traitement id_traitement;
-    
+	 
+	 @ManyToOne()
+	 @JoinColumn(name = "id_consultation", nullable = false)
+	    private Consultation consultation;
+	 
 	 @Column(name = "posologie", nullable = false, length = 255)
 	 private String posologie;
 	 
@@ -40,10 +44,11 @@ public class LigneConsultation {
 	 public LigneConsultation() {
 			super();		
 		}
-	public LigneConsultation(long id, Consultation id_consultation, Traitement id_traitement, String posologie,
+	public LigneConsultation(long id, Consultation consultation, Traitement id_traitement, String posologie,
 			String unite_temps, String quantite) {
 		super();
 		this.id = id;
+		this.consultation = consultation;
 		this.id_traitement = id_traitement;
 		this.posologie = posologie;
 		this.unite_temps = unite_temps;
@@ -109,6 +114,12 @@ public class LigneConsultation {
 	 */
 	public void setQuantite(String quantite) {
 		this.quantite = quantite;
+	}
+	public Consultation getConsultations() {
+		return consultation;
+	}
+	public void setConsultations(Consultation consultations) {
+		this.consultation = consultations;
 	}
 	 
 	 

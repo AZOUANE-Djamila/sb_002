@@ -1,9 +1,9 @@
-package dz.ibnrochd.master14.dao;
+package dz.ibnrochd.master15.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import dz.ibnrochd.master14.model.Patient;
+import dz.ibnrochd.master15.model.Patient;
 
 import java.util.List;
 
