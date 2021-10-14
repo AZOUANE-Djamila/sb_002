@@ -57,9 +57,11 @@ public class Sb002Application implements CommandLineRunner {
 		// TODO : créer un nouveau patient (valeurs au choix)  PUIS enregistrer-le
 		System.out.println("Créer un nouveau patient (valeurs au choix)  PUIS enregistrer-le");
 		patientRepository.save(new Patient(11111,"AZOUANE","Djamila","f",new Date("25/06/1993"),"657777","Alger"));
-		System.out.println("Le patient ajouté: ");
-		patientRepository.findByNom("AZOUANE").forEach(pat -> System.out.println(pat.getNom()+" "+pat.getPrenom()+"\n"));
-		// TODO : rechercher la consultation ayant id=3 
+		patientRepository.save(new Patient(13111,"AZOUANE","Yasmine","f",new Date("10/02/1996"),"67777","Alger"));
+	
+		System.out.println("Les patient ajoutés sont: ");
+		patientRepository.findByNom("AZOUANE").forEach(pat -> System.out.println(pat.getNom()+" "+pat.getPrenom()));
+
 		System.out.println("______________________________________________________________________________________________\n");
 
 		Consultation consult = consultationRepository.findById(3);

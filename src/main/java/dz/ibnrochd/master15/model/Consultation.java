@@ -28,7 +28,6 @@ public class Consultation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
     
-	@Column(name = "motif", length = 255)
     private String motif;
 	
 	@Column(name = "date_consultation", nullable = false)
