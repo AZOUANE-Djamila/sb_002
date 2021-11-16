@@ -41,12 +41,10 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-    		<groupId>org.hibernate</groupId>
-    		<artifactId>hibernate-core</artifactId>
-    		<version>5.5.7.Final</version>
-		</dependency>
+      		<groupId>org.springframework.boot</groupId>
+      		<artifactId>spring-boot-starter-data-rest</artifactId>
+    	</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -55,5 +53,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

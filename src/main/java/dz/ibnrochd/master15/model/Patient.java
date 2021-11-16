@@ -19,11 +19,11 @@ import javax.persistence.TemporalType;
 @Table(schema = "cabinet", name = "patient")
 public class Patient  {
 
-	//private static final long serialVersionUID = -3415388341943341473L;
+	//private static final int serialVersionUID = -3415388341943341473L;
 
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
     @Column(name = "nom", nullable = false, length = 255)
     private String nom;
@@ -55,7 +55,7 @@ public class Patient  {
     public Patient() {		
 	}
 
-	public Patient(long id, String nom, String prenom, String sexe, Date dateNaissance, String numeroTelephone,
+	public Patient(int id, String nom, String prenom, String sexe, Date dateNaissance, String numeroTelephone,
 			String adresse) {
 		this.id = id;
 		this.nom = nom;
@@ -68,11 +68,11 @@ public class Patient  {
 	
 	//////////////////////////////////////////////////////
 
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

@@ -23,7 +23,7 @@ public class Sb002Application implements CommandLineRunner {
 	@Autowired
 	PatientRepository patientRepository;
 	
-	// TODO : déclarer les autres repository de la même façon que PatientRepository
+	// déclarer les autres repository de la même façon que PatientRepository
 	
 	@Autowired
 	private ConsultationRepository consultationRepository;
@@ -40,6 +40,7 @@ public class Sb002Application implements CommandLineRunner {
 	public static void main(String[] args) {
 		SpringApplication.run(Sb002Application.class, args);
 	}
+	
 
 	@Override
 	public void run(String... args) throws Exception {
@@ -77,5 +78,6 @@ public class Sb002Application implements CommandLineRunner {
 		ligneConsultationRepository.findByConsultation(consult).forEach(l->System.out.println("- "+ l.getId_traitement().getNom() +"\n"));
 		//getLigneConsultations().forEach(l->System.out.println("- "+ l.getId_traitement().getNom() +"\n"));
 	}
+
 
 }
